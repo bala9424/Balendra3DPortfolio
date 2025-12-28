@@ -61,6 +61,11 @@ export const navLinks = [
     
   },
   {
+    id: "askai",
+    title: "Ask AI",
+    isModal: true
+  },
+  {
     id: "contact",
     title: "Contact",
    
@@ -161,55 +166,45 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Senior Software Engineer",
+    company_name: "Blue Yonder",
+    icon: fullstack,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "June 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Leading development of enterprise-level supply chain management solutions using React.js and Node.js.",
+      "Architecting and implementing scalable microservices architecture for warehouse management systems.",
+      "Implemented comprehensive unit testing using Jest and React Testing Library to ensure code quality and reliability.",
+      "Established Git workflow best practices including branch strategies, pull request reviews, and CI/CD pipelines.",
+      "Developed automated end-to-end testing solutions using WebDriver and Selenium for regression testing.",
+      "Mentoring junior developers and conducting code reviews to maintain high code quality standards.",
+      "Collaborating with product teams across multiple time zones to deliver critical features on time.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Software Engineer",
+    company_name: "Divami",
+    icon: web,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "March 2022 - May 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained responsive web applications using React.js, Angular, and Node.js.",
+      "Implemented RESTful APIs and integrated third-party services to enhance application functionality.",
+      "Worked closely with UI/UX designers to implement pixel-perfect designs and smooth user experiences.",
+      "Participated in agile development processes including sprint planning, daily standups, and retrospectives.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Software Engineer",
+    company_name: "SitaraFoods.com",
+    icon: mobile,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "July 2021 - February 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built e-commerce platform features including product catalog, shopping cart, and payment integration.",
+      "Developed mobile-responsive web applications ensuring cross-browser compatibility.",
+      "Optimized application performance and implemented caching strategies to improve load times.",
+      "Collaborated with cross-functional teams to gather requirements and deliver customer-focused solutions.",
     ],
   },
 ];
@@ -646,27 +641,27 @@ export const otherProject = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Balendra is an exceptional engineer who consistently delivers high-quality features ahead of schedule. His ability to quickly debug complex issues and turn them into solutions is remarkable. He's been instrumental in accelerating our development velocity at Divami.",
+    name: "Venkat",
+    designation: "Engineering Head",
+    company: "Divami",
+    image: "https://randomuser.me/api/portraits/men/7.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Working with Balendra has been a fantastic experience. His technical expertise combined with rapid feature delivery makes him stand out. He debugs issues with incredible speed and always maintains clean, maintainable code. A true asset to any engineering team.",
+    name: "Vaibhav",
+    designation: "Staff Engineer",
+    company: "Blue Yonder",
+    image: "https://randomuser.me/api/portraits/men/8.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Balendra's dedication to quality and speed is unmatched. He consistently delivers complex features on time while maintaining high code standards. His quick problem-solving skills and collaborative approach have significantly improved our team's productivity at Blue Yonder.",
+    name: "Sonakshi",
+    designation: "Senior Software Engineer",
+    company: "Blue Yonder",
+    image: "https://randomuser.me/api/portraits/women/9.jpg",
   },
 ];
 
@@ -802,12 +797,15 @@ const projects = [
 const achievements = [
   {
     title: "Completed multiple certification training programs from NPTEL and NareshIT in web technologies, including React, Node.js, Angular, C, C++, and Modern Application Development.",
+    isHtml: false
   },
   {
-    title: "Received 'Pat on the Back' award in my first year at Divami for outstanding performance.",
+    title: "Received <span class='text-yellow-400 font-bold'>🏆 'Pat on the Back'</span> award in my first year at Divami for <span class='text-green-400 font-semibold'>outstanding performance</span>.",
+    isHtml: true
   },
   {
-    title: "Awarded 'Shining Star' in my second year at Divami in recognition of my contributions.",
+    title: "Awarded <span class='text-pink-400 font-bold'>⭐ 'Shining Star'</span> in my second year at Divami in recognition of my <span class='text-purple-400 font-semibold'>contributions</span>.",
+    isHtml: true
   },
 ];
 

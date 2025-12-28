@@ -13,9 +13,62 @@
   color-scheme: dark;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Space Portfolio Styles */
+.Welcome-text {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
+  background-blend-mode: normal, screen;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Welcome-box {
+  isolation: isolate;
+  overflow: hidden;
+  align-items: center;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 32px;
+  box-shadow: inset 0 -7px 11px #a48fff1f;
+  display: flex;
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
+}
+
+.button-primary {
+  background: linear-gradient(
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.32) 100%
+    ),
+    rgba(113, 47, 255, 0.12);
+  box-shadow: inset 0 0 12px #bf97ff3d;
+}
+
+.button-primary:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.42) 100%
+    ),
+    rgba(113, 47, 255, 0.22);
+}
+
 #astronaut {
   position: absolute;
-  top: 50px; /* Default position for large screens */
+  top: 120px; /* Default position for large screens */
   right: 0px; /* Default position for large screens */
   width: 500px; /* Default size for large screens */
   height: 500px; /* Maintain proportions */
@@ -28,11 +81,19 @@
 
 @media (max-width: 768px) { /* Adjust styles for mobile view */
   #astronaut {
-    top: 10px; /* Position closer to the top for smaller screens */
+    top: 80px; /* Position closer to the top for smaller screens */
     right: -45px; /* Position slightly inset from the right */
-    width: 250px; /* Reduce size for better fit */
-    height: 250px; /* Maintain proportions */
+    width: 150px; /* Reduce size for better fit on mobile */
+    height: 150px; /* Maintain proportions */
     animation: float 4s ease-in-out infinite; /* Adjust timing for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #astronaut {
+    width: 120px;
+    height: 120px;
+    right: -30px;
   }
 }
 
@@ -177,9 +238,17 @@
   .rocket {
     bottom: 0px; /* Position closer to the top for smaller screens */
     right: 30px; /* Position slightly inset from the right */
-    width: 250px; /* Reduce size for better fit */
-    height: 250px; /* Maintain proportions */
+    width: 200px; /* Reduce size for better fit */
+    height: 200px; /* Maintain proportions */
     animation: rocket-move2 60s linear infinite; /* Animation duration and repeat */
+  }
+}
+
+@media (max-width: 480px) {
+  .rocket {
+    width: 150px;
+    height: 150px;
+    right: 20px;
   }
 }
 
@@ -321,5 +390,16 @@
   } /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
+  }
+}
+
+/* Ensure project header is visible on all devices */
+@media (max-width: 768px) {
+  /* Force visibility for project section headers */
+  [class*="sectionHeadText"],
+  [class*="sectionSubText"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
   }
 }

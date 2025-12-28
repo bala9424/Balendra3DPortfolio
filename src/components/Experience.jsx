@@ -39,20 +39,20 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold">{experience.title}</h3>
         <p
-          className="text-secondary text-[16px] font-semibold"
+          className="text-secondary text-sm sm:text-base font-semibold"
           style={{ margin: 0 }}
         >
           {experience.company_name}
         </p>
       </div>
 
-      <ul className="mt-5 list-disc ml-5 space-y-2">
+      <ul className="mt-5 list-disc ml-3 sm:ml-5 space-y-2">
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 tracking-wider"
+            className="text-white-100 text-xs sm:text-sm pl-1 tracking-wider"
           >
             {point}
           </li>
@@ -66,15 +66,49 @@ const Experience = () => {
   const [animationName, setAnimationName] = useState("idle");
   const [positionX, setPositionX] = useState(0);
   const [positionY, setPositionY] = useState(1.2);
+  const [rotation, setRotation] = useState(-Math.PI / 2);
+  const [isMobile, setIsMobile] = useState(false);
   const developerRef = useRef();
  
+  // Check if mobile on mount and resize
   useEffect(() => {
+    const checkMobile = () => {
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+      // Set rotation once for mobile and keep it fixed
+      if (mobile) {
+        setRotation(-Math.PI / 2); // Face right toward content
+      }
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  useEffect(() => {
+    // Only run scroll animation on desktop, not on mobile
+    if (isMobile) return;
+    
     gsap.timeline({
       scrollTrigger: {
         trigger: ".experience-section",
         start: "top top",
         end: "bottom bottom",
         scrub: true,
+        onUpdate: (self) => {
+          const progress = self.progress;
+          const totalExperiences = experiences.length;
+          const currentIndex = Math.floor(progress * totalExperiences);
+          
+          // Alternate rotation based on timeline position (desktop only)
+          if (currentIndex % 2 === 0) {
+            setRotation(-Math.PI / 2); // Face left for first, third, etc.
+          } else {
+            setRotation(Math.PI / 2); // Face right for second, fourth, etc.
+          }
+        },
       },
     })
       .to(
@@ -99,7 +133,7 @@ const Experience = () => {
           },
         }
       );
-  }, []);
+  }, [isMobile]);
 
   return (
     <div
@@ -122,7 +156,8 @@ const Experience = () => {
           style={{
             position: "absolute",
             zIndex: 9999,
-            top:0
+            top:0,
+            pointerEvents: 'none'
           }}
         >
           <ambientLight intensity={7} />
@@ -134,10 +169,10 @@ const Experience = () => {
             <Developer
               ref={developerRef}
               position-y={positionY}
-              position-x={positionX}
-              scale={0.6}
+              position-x={isMobile ? -0.7 : positionX}
+              scale={isMobile ? 0.55 : 0.6}
               animationName={animationName}
-              // rotation={[0, Math.PI / 2, 0]}
+              rotation={[0, rotation, 0]}
             />
           </Suspense>
         </Canvas>

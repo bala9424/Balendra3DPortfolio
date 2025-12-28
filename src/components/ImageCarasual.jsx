@@ -90,15 +90,38 @@ export const ImageCarousel = () => {
 
   useEffect(() => {
     gsap.registerPlugin(Draggable, InertiaPlugin);
-    console.log(sliderRef.current.clientWidth, sliderRef.current.innerWidth);
+    
+    // Auto-scroll animation
+    const autoScroll = () => {
+      const slider = sliderRef.current;
+      const maxScroll = -slider.clientWidth + window.innerWidth * 0.88;
+      
+      gsap.to(slider, {
+        x: maxScroll,
+        duration: 20,
+        ease: "none",
+        repeat: -1,
+        yoyo: true,
+        repeatDelay: 1
+      });
+    };
+
     Draggable.create(sliderRef.current, {
       type: "x",
       bounds: {
         minX: -sliderRef.current.clientWidth + window.innerWidth * 0.88,
         maxX: 0
       },
-      inertia: true
+      inertia: true,
+      onPress: function() {
+        gsap.killTweensOf(sliderRef.current);
+      },
+      onRelease: function() {
+        setTimeout(autoScroll, 2000);
+      }
     });
+
+    autoScroll();
   }, []);
 
   return (<div className="containerImg">
