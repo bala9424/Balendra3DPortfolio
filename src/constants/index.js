@@ -170,7 +170,7 @@ const technologies = [
 const experiences = [
   {
     title: "Senior Software Engineer",
-    company_name: "Blue Yonder",
+    company_name: "Blue Yonder | Jda(Panasonic)",
     icon: fullstack,
     iconBg: "#383E56",
     date: "June 2023 - Present",
@@ -186,7 +186,7 @@ const experiences = [
   },
   {
     title: "Software Engineer",
-    company_name: "Divami",
+    company_name: "Divami Design Labs Pvt. Ltd",
     icon: web,
     iconBg: "#E6DEDD",
     date: "March 2022 - May 2023",
@@ -647,24 +647,24 @@ const testimonials = [
       "Balendra is an exceptional engineer who consistently delivers high-quality features ahead of schedule. His ability to quickly debug complex issues and turn them into solutions is remarkable. He's been instrumental in accelerating our development velocity at Divami.",
     name: "Venkat",
     designation: "Engineering Head",
-    company: "Divami",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
+    company: "Divami Design Labs Pvt. Ltd",
+    image: "https://ui-avatars.com/api/?name=Venkat&background=915EFF&color=fff&size=128",
   },
   {
     testimonial:
       "Working with Balendra has been a fantastic experience. His technical expertise combined with rapid feature delivery makes him stand out. He debugs issues with incredible speed and always maintains clean, maintainable code. A true asset to any engineering team.",
-    name: "Vaibhav",
+    name: "Vaibhav Singh",
     designation: "Staff Engineer",
-    company: "Blue Yonder",
-    image: "https://randomuser.me/api/portraits/men/8.jpg",
+    company: "Blue Yonder | Jda(Panasonic)",
+    image: "https://ui-avatars.com/api/?name=Vaibhav+Singh&background=915EFF&color=fff&size=128",
   },
   {
     testimonial:
       "Balendra's dedication to quality and speed is unmatched. He consistently delivers complex features on time while maintaining high code standards. His quick problem-solving skills and collaborative approach have significantly improved our team's productivity at Blue Yonder.",
     name: "Sonakshi",
     designation: "Senior Software Engineer",
-    company: "Blue Yonder",
-    image: "https://randomuser.me/api/portraits/women/9.jpg",
+    company: "Blue Yonder | Jda(Panasonic)",
+    image: "https://ui-avatars.com/api/?name=Sonakshi&background=915EFF&color=fff&size=128",
   },
 ];
 

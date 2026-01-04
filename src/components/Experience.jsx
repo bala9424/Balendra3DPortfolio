@@ -169,7 +169,7 @@ const Experience = () => {
             <Developer
               ref={developerRef}
               position-y={positionY}
-              position-x={isMobile ? -0.7 : positionX}
+              position-x={isMobile ? -0.5 : positionX}
               scale={isMobile ? 0.55 : 0.6}
               animationName={animationName}
               rotation={[0, rotation, 0]}

@@ -68,9 +68,17 @@ const Hero = () => {
 
       {/* <ComputersCanvas /> */}
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+      <div className='absolute bottom-5 w-full flex justify-center items-center z-20'>
+        <a href='#about' 
+          style={{ cursor: 'pointer', zIndex: 20 }}
+          onClick={(e) => {
+            e.preventDefault();
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+              aboutSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 cursor-pointer hover:border-white transition-colors'>
             <motion.div
               animate={{
                 y: [0, 24, 0],
