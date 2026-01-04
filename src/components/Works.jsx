@@ -22,7 +22,6 @@ const ProjectCard = ({
   image,
   source_code_link,
   live_link,
-  onPreview,
   onView3D,
 }) => {
   const cardRef = useRef(null);
@@ -134,7 +133,7 @@ const ProjectCard = ({
             
             {live_link && (
               <button
-                onClick={() => onPreview(live_link, name)}
+                onClick={() => window.open(live_link, "_blank")}
                 className='opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-purple-500 to-pink-500 w-12 h-12 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transform text-white font-bold text-lg'
               >
                 ▶
@@ -166,8 +165,6 @@ const ProjectCard = ({
 const Works = () => {
   const [selected, setSelected] = useState("java");
   const [data, setData] = useState([]);
-  const [previewUrl, setPreviewUrl] = useState(null);
-  const [previewTitle, setPreviewTitle] = useState("");
   const [show3DViewer, setShow3DViewer] = useState(false);
   const [selected3DProject, setSelected3DProject] = useState(null);
   const titleRef = useRef(null);
@@ -206,16 +203,6 @@ const Works = () => {
       );
     }
   }, []);
-
-  const handlePreview = (url, title) => {
-    setPreviewUrl(url);
-    setPreviewTitle(title);
-  };
-
-  const closePreview = () => {
-    setPreviewUrl(null);
-    setPreviewTitle("");
-  };
 
   const handleView3D = (index) => {
     setSelected3DProject(index);
@@ -264,7 +251,6 @@ const Works = () => {
             key={`project-${index}`} 
             index={index} 
             {...project} 
-            onPreview={handlePreview}
             onView3D={() => handleView3D(index)}
           />
         ))}
@@ -276,49 +262,8 @@ const Works = () => {
           projects={projects}
           initialIndex={selected3DProject}
           onClose={close3DViewer}
-          onPreviewClick={handlePreview}
         />
       )}
-
-      {/* Preview Modal */}
-      <AnimatePresence>
-        {previewUrl && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black bg-opacity-90 z-[9999] flex items-center justify-center p-4"
-            onClick={closePreview}
-          >
-            <motion.div
-              initial={{ scale: 0.5, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.5, opacity: 0 }}
-              transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="relative w-full max-w-7xl h-[90vh] bg-tertiary rounded-3xl shadow-2xl border-2 border-gray-700"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Close Button */}
-              <button
-                onClick={closePreview}
-                className="absolute -top-4 -right-4 z-10 bg-red-500 hover:bg-red-600 text-white text-2xl font-bold w-12 h-12 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 hover:scale-110"
-              >
-                ×
-              </button>
-              
-              <div className="bg-primary p-4 flex justify-between items-center border-b border-gray-700 rounded-t-3xl">
-                <h3 className="text-white text-xl font-bold">{previewTitle}</h3>
-              </div>
-              <iframe
-                src={previewUrl}
-                className="w-full h-[calc(100%-60px)] rounded-b-3xl"
-                title={previewTitle}
-                frameBorder="0"
-              />
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </>
   );
 };

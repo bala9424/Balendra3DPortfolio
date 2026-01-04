@@ -24,6 +24,9 @@ import {
   tripguide,
   threejs,
   fullstack,
+  fanta_card,
+  naturalist_card,
+  travel_card,
 } from "../assets";
  
  import {
@@ -667,131 +670,50 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Animated Fanta Landing Page",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A visually appealing landing page for a Fanta-themed website, built with Three.js and GSAP. Features 3D animations, smooth transitions, and a fully responsive, interactive UI.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "threejs", color: "blue-text-gradient" },
+      { name: "gsap", color: "green-text-gradient" },
+      { name: "html", color: "pink-text-gradient" },
+      { name: "css", color: "blue-text-gradient" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: fanta_card, // You can update this to a custom screenshot if available
+    source_code_link: "https://github.com/bala9424/Fanta",
+    live_link: "https://myfanta.netlify.app/",
+    details: `\n# Animated Fanta Landing Page\n\nWelcome to the **Animated Fanta Landing Page**! This project is a visually appealing landing page designed for a Fanta-themed website, built using **Three.js**, **GSAP**, **HTML**, and **CSS**.\n\n## 🚀 Features\n- **3D Animations** with Three.js 🎥\n- **Smooth Animations** powered by GSAP ✨\n- **Fully Responsive** design 📱💻\n- **Interactive UI** for an immersive experience 🍊\n\n## 🛠️ Technologies Used\n- [Three.js](https://threejs.org/) - JavaScript 3D Library\n- [GSAP](https://greensock.com/gsap/) - Animation Library\n- HTML5 & CSS3 - Structure and Styling\n\n## 🎬 Demo\nCheck out the live demo: [Live Demo](https://myfanta.netlify.app/)\n\n## 🏗️ Installation & Usage\n1. Clone this repository:\n   git clone https://github.com/bala9424/Fanta.git\n2. Navigate to the project folder:\n   cd Fanta\n3. Open index.html in your browser or use a local server.\n\n## 🤝 Contributing\nFeel free to fork this repository and submit pull requests. Any contributions to improve the project are welcome!\n`,
   },
   {
-    name: "Car Rent",
+    name: "Animated Naturalist Chocolate Can Landing Page",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A visually appealing landing page for a chocolate-themed website, built with Three.js and GSAP. Features 3D animations, smooth transitions, and a fully responsive, interactive UI.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "threejs", color: "blue-text-gradient" },
+      { name: "gsap", color: "green-text-gradient" },
+      { name: "html", color: "pink-text-gradient" },
+      { name: "css", color: "blue-text-gradient" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: naturalist_card, // You can update this to a custom screenshot if available
+    source_code_link: "https://github.com/bala9424/naturalist_landing_page",
+    live_link: "https://mynaturalist.netlify.app/",
+    details: `\n# Animated Naturalist Chocolate Can Landing Page\n\nWelcome to the **Animated Naturalist Chocolate Can Landing Page**! This project is a visually appealing landing page designed for a chocolate-themed website, built using **Three.js**, **GSAP**, **HTML**, and **CSS**.\n\n## 🚀 Features\n- **3D Animations** with Three.js 🎥\n- **Smooth Animations** powered by GSAP ✨\n- **Fully Responsive** design 📱💻\n- **Interactive UI** for an immersive experience 🍫\n\n## 🛠️ Technologies Used\n- [Three.js](https://threejs.org/) - JavaScript 3D Library\n- [GSAP](https://greensock.com/gsap/) - Animation Library\n- HTML5 & CSS3 - Structure and Styling\n\n## 🎬 Demo\nCheck out the live demo: [Live Demo](https://mynaturalist.netlify.app/)\n\n## 🏗️ Installation & Usage\n1. Clone this repository:\n   git clone https://github.com/bala9424/naturalist_landing_page.git\n2. Navigate to the project folder:\n   cd naturalist_landing_page\n3. Open index.html in your browser or use a local server.\n\n## 🤝 Contributing\nFeel free to fork this repository and submit pull requests. Any contributions to improve the project are welcome!\n`,
   },
   {
-    name: "Car Rent",
+    name: "Animated Travel Landing Page",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A visually appealing landing page for travel websites, built with Three.js and GSAP. Features 3D animations, smooth transitions, and a fully responsive, interactive UI.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "threejs", color: "blue-text-gradient" },
+      { name: "gsap", color: "green-text-gradient" },
+      { name: "html", color: "pink-text-gradient" },
+      { name: "css", color: "blue-text-gradient" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+    image: travel_card,
+    source_code_link: "https://github.com/bala9424/Travel_Landing_page_gsap",
+    live_link: "https://balendratravel.netlify.app/",
+    details: `\n# Animated Travel Landing Page\n\nWelcome to the **Animated Travel Landing Page**! This project is a visually appealing landing page designed for travel-related websites, built using **Three.js**, **GSAP**, **HTML**, and **CSS**.\n\n## 🚀 Features\n- **3D Animations** with Three.js 🎥\n- **Smooth Animations** powered by GSAP ✨\n- **Fully Responsive** design 📱💻\n- **Interactive UI** for an immersive experience 🏝️\n\n## 🛠️ Technologies Used\n- [Three.js](https://threejs.org/) - JavaScript 3D Library\n- [GSAP](https://greensock.com/gsap/) - Animation Library\n- HTML5 & CSS3 - Structure and Styling\n\n## 📷 Preview\n\n![image](https://github.com/user-attachments/assets/72e00263-0597-4587-9070-f144b1fcb57c)\n\n## 🎬 Demo\nCheck out the live demo: [Live Demo](https://balendratravel.netlify.app/)\n\n## 🏗️ Installation & Usage\n1. Clone this repository:\n   git clone https://github.com/your-username/animated-travel-landing.git\n2. Navigate to the project folder:\n   cd animated-travel-landing\n3. Open index.html in your browser or use a local server.\n\n## 📁 Project Structure\n\nanimated-travel-landing/\n│-- index.html      # Main HTML file\n│-- style.css       # Stylesheet\n│-- script.js       # JavaScript file for animations\n│-- assets/         # Images and 3D models\n│-- README.md       # Project documentation\n\n## 🤝 Contributing\nFeel free to fork this repository and submit pull requests. Any contributions to improve the project are welcome!\n`,
+  }
 ];
 
 const achievements = [

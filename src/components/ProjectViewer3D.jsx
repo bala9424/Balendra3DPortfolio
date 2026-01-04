@@ -290,9 +290,9 @@ const ProjectViewer3D = ({ projects, initialIndex = 0, onClose, onPreviewClick }
   };
 
   const handlePreview = () => {
-    if (onPreviewClick) {
-      onPreviewClick(projects[currentIndex].live_link, projects[currentIndex].name);
-      onClose();
+    const liveLink = projects[currentIndex].live_link;
+    if (liveLink) {
+      window.open(liveLink, "_blank");
     }
   };
 

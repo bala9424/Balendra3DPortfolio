@@ -1,3 +1,6 @@
+import fanta_card from "./fanta_card.png";
+import naturalist_card from "./naturalist_card.png";
+import travel_card from "./travel_card.png";
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -29,6 +32,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+// import travel_landing from "./travel_landing.png";
 import my from "./my.png";
 import fullstack from "./fullstack.gif";
 import univ_logo from "./univ_logo.png";
@@ -66,11 +70,15 @@ export {
   carrent,
   jobit,
   tripguide,
+  // travel_landing,
   my,
   fullstack,
   univ_logo,
   mygif,
   lantern,
   rocket,
-  astronaut
+  astronaut,
+  fanta_card,
+  naturalist_card,
+  travel_card
 };
