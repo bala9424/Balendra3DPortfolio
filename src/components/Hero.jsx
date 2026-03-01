@@ -53,14 +53,39 @@ const Hero = () => {
             <span className='text-purple-300'>Check out my projects and skills</span> 👇
           </p>
 
-          <a 
-            href="/Balendra_Paraste_Resume.pdf" 
-            download="Balendra_Paraste_Resume.pdf"
-            className="py-2 px-4 button-primary text-center text-white rounded-lg inline-block"
-            style={{ cursor: 'pointer', textDecoration: 'none', zIndex: 999, position: 'relative', width: '200px' }}
-          >
-            Know more
-          </a>
+          <div className='flex flex-row gap-4 mt-5'>
+            <a 
+              href="#about" 
+              className="py-2 px-6 button-primary text-center text-white rounded-lg inline-block"
+              style={{ cursor: 'pointer', textDecoration: 'none', zIndex: 999, position: 'relative' }}
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Know more
+            </a>
+            <a 
+              href="/Balendra_Paraste_Resume.pdf" 
+              download="Balendra_Paraste_Resume.pdf"
+              className="py-2 px-6 button-primary text-center text-white rounded-lg inline-flex items-center gap-2"
+              style={{ cursor: 'pointer', textDecoration: 'none', zIndex: 999, position: 'relative' }}
+            >
+              <svg 
+                stroke="currentColor" 
+                fill="none" 
+                strokeWidth="2" 
+                viewBox="0 0 24 24" 
+                aria-hidden="true" 
+                height="20" 
+                width="20" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+              </svg>
+              Resume
+            </a>
+          </div>
         </div>
       
       </div>

@@ -1,6 +1,10 @@
 import fanta_card from "./fanta_card.png";
 import naturalist_card from "./naturalist_card.png";
 import travel_card from "./travel_card.png";
+import react_practice from "./react_practice.png";
+import multi_chat from "./multi_chat.png";
+import modern_dashboard from "./modern_dashboard.png";
+import iphone17 from "./iphone17.png";
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -80,5 +84,9 @@ export {
   astronaut,
   fanta_card,
   naturalist_card,
-  travel_card
+  travel_card,
+  react_practice,
+  multi_chat,
+  modern_dashboard,
+  iphone17
 };

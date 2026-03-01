@@ -11,6 +11,7 @@ import { projects,list, javaProject, cProject, webProject, otherProject } from "
 import { fadeIn, textVariant } from "../utils/motion";
 import ProjectList from "./ProjectList";
 import ProjectViewer3D from "./ProjectViewer3D";
+import ProjectModal from "./ProjectModal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -167,6 +168,8 @@ const Works = () => {
   const [data, setData] = useState([]);
   const [show3DViewer, setShow3DViewer] = useState(false);
   const [selected3DProject, setSelected3DProject] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
   const titleRef = useRef(null);
 
   useEffect(() => {
@@ -214,6 +217,16 @@ const Works = () => {
     setSelected3DProject(null);
   };
 
+  const handleOpenModal = (project) => {
+    setSelectedProject(project);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setSelectedProject(null);
+  };
+
   return (
     <>
       <motion.div 
@@ -251,10 +264,17 @@ const Works = () => {
             key={`project-${index}`} 
             index={index} 
             {...project} 
-            onView3D={() => handleView3D(index)}
+            onView3D={() => handleOpenModal(project)}
           />
         ))}
       </div>
+
+      {/* Full Screen Project Modal triggered by Eye Icon */}
+      <ProjectModal
+        isOpen={showModal}
+        project={selectedProject}
+        onClose={closeModal}
+      />
 
       {/* 3D Viewer */}
       {show3DViewer && selected3DProject !== null && (

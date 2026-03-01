@@ -46,6 +46,18 @@ const ExperienceCard = ({ experience }) => {
         >
           {experience.company_name}
         </p>
+
+        {/* Skill Badges */}
+        <div className="flex flex-wrap gap-2 mt-3">
+          {experience.skills?.map((skill, index) => (
+            <span
+              key={`experience-skill-${index}`}
+              className="text-[10px] sm:text-[11px] px-3 py-1 rounded-full border border-white/10 bg-white/5 text-secondary font-medium tracking-wider"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
       </div>
 
       <ul className="mt-5 list-disc ml-3 sm:ml-5 space-y-2">

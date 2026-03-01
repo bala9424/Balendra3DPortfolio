@@ -27,6 +27,10 @@ import {
   fanta_card,
   naturalist_card,
   travel_card,
+  react_practice,
+  multi_chat,
+  modern_dashboard,
+  iphone17,
 } from "../assets";
  
  import {
@@ -174,14 +178,13 @@ const experiences = [
     icon: fullstack,
     iconBg: "#383E56",
     date: "June 2023 - Present",
+    skills: ["React", "Socket", "PubSub", "Events", "Material UI", "CI/CD", "Git Flow", "RTL", "Jest", "WebdriverIO"],
     points: [
-      "Leading development of enterprise-level supply chain management solutions using React.js and Node.js.",
-      "Architecting and implementing scalable microservices architecture for warehouse management systems.",
-      "Implemented comprehensive unit testing using Jest and React Testing Library to ensure code quality and reliability.",
-      "Established Git workflow best practices including branch strategies, pull request reviews, and CI/CD pipelines.",
-      "Developed automated end-to-end testing solutions using WebDriver and Selenium for regression testing.",
-      "Mentoring junior developers and conducting code reviews to maintain high code quality standards.",
-      "Collaborating with product teams across multiple time zones to deliver critical features on time.",
+      "Engineered scalable enterprise dashboards using React (TypeScript), Redux, and modern UI libraries, improving vendor management workflows and real-time data visibility for business operations.",
+      "Developed comprehensive End-to-End (E2E) test suites using WebdriverIO, achieving ~90% coverage of critical user flows and reducing regression defects by ~30%.",
+      "Led the migration from MUI v4 to MUI v5, improving component performance and UI consistency by ~25%; refactored and expanded unit tests using Jest and React Testing Library (RTL) to improve coverage, reliability, and maintainability.",
+      "Worked on the frontend/UI of an existing AI agent–driven application using React, enhancing interfaces that integrate intelligent assistants for workflow automation, recommendations, and contextual actions.",
+      "Contributed to an existing micro-frontend–based UI platform, building and enhancing features across multiple independently deployed frontend modules.",
     ],
   },
   {
@@ -190,11 +193,14 @@ const experiences = [
     icon: web,
     iconBg: "#E6DEDD",
     date: "March 2022 - May 2023",
+    skills: ["React", "Angular", "Nest JS", "Next.js", "Node.js", "Material UI", "Tailwind CSS", "Python", "Data Analytics", "Gen AI"],
     points: [
-      "Developed and maintained responsive web applications using React.js, Angular, and Node.js.",
-      "Implemented RESTful APIs and integrated third-party services to enhance application functionality.",
-      "Worked closely with UI/UX designers to implement pixel-perfect designs and smooth user experiences.",
-      "Participated in agile development processes including sprint planning, daily standups, and retrospectives.",
+      "Built and enhanced responsive, data-driven web interfaces using React, Angular, HTML, CSS, and JavaScript, improving overall user experience and page usability by ~30% across multiple client projects (Yuyiii, imPAC, RightData).",
+      "Implemented modular and scalable UI styles using CSS frameworks and preprocessors (Bootstrap, Sass), reducing UI defects and rework by ~25%.",
+      "Developed interactive dashboards and data visualization components (charts, dynamic views) for cloud security and data platforms, improving data discoverability and user insights by ~35%.",
+      "Integrated frontend applications with backend APIs (PHP and service APIs), improving data fetch reliability and reducing UI data-related issues by ~20%.",
+      "Implemented state management and component-level architecture in React-based applications, reducing unnecessary re-renders and improving UI performance by ~20–25%.",
+      "Wrote and maintained unit tests for frontend components, increasing test coverage to ~70–80% and reducing production regressions by ~25%.",
     ],
   },
   {
@@ -713,6 +719,65 @@ const projects = [
     source_code_link: "https://github.com/bala9424/Travel_Landing_page_gsap",
     live_link: "https://balendratravel.netlify.app/",
     details: `\n# Animated Travel Landing Page\n\nWelcome to the **Animated Travel Landing Page**! This project is a visually appealing landing page designed for travel-related websites, built using **Three.js**, **GSAP**, **HTML**, and **CSS**.\n\n## 🚀 Features\n- **3D Animations** with Three.js 🎥\n- **Smooth Animations** powered by GSAP ✨\n- **Fully Responsive** design 📱💻\n- **Interactive UI** for an immersive experience 🏝️\n\n## 🛠️ Technologies Used\n- [Three.js](https://threejs.org/) - JavaScript 3D Library\n- [GSAP](https://greensock.com/gsap/) - Animation Library\n- HTML5 & CSS3 - Structure and Styling\n\n## 📷 Preview\n\n![image](https://github.com/user-attachments/assets/72e00263-0597-4587-9070-f144b1fcb57c)\n\n## 🎬 Demo\nCheck out the live demo: [Live Demo](https://balendratravel.netlify.app/)\n\n## 🏗️ Installation & Usage\n1. Clone this repository:\n   git clone https://github.com/your-username/animated-travel-landing.git\n2. Navigate to the project folder:\n   cd animated-travel-landing\n3. Open index.html in your browser or use a local server.\n\n## 📁 Project Structure\n\nanimated-travel-landing/\n│-- index.html      # Main HTML file\n│-- style.css       # Stylesheet\n│-- script.js       # JavaScript file for animations\n│-- assets/         # Images and 3D models\n│-- README.md       # Project documentation\n\n## 🤝 Contributing\nFeel free to fork this repository and submit pull requests. Any contributions to improve the project are welcome!\n`,
+  },
+  {
+    name: "React Practice Projects",
+    description:
+      "A comprehensive collection of essential React projects including Todo App, Weather App, Pagination, Table & Search, Form & CRUD, Multi-Step Form, Star Rating, and more. Perfect for mastering React fundamentals and state management.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "tailwind", color: "green-text-gradient" },
+      { name: "api", color: "pink-text-gradient" },
+    ],
+    image: react_practice,
+    source_code_link: "https://github.com/bala9424/Machine-round",
+    live_link: "https://react-machine-round-project.netlify.app/",
+    details: `\n# React Practice Projects 🚀\n\nA collection of essential React applications built to master core concepts and modern development practices.\n\n## 📂 Included Projects\n- **Todo App**: Task management with LocalStorage 📝\n- **Weather App**: Real-time API fetching practice ☁️\n- **Pagination**: Efficient data slicing and navigation 🔢\n- **Table & Search**: Dynamic filtering and debouncing 🔍\n- **Form & CRUD**: Comprehensive API, Validation & CRUD operations 📝\n- **Multi-Step Form**: Wizard-style complex form logic 🧙‍♂️\n- **Star Rating**: Interactive component design practice ⭐\n- **Counter App**: Basic state management fundamentals 🔢\n\n## 🛠️ Technologies Used\n- **React.js**\n- **Tailwind CSS**\n- **Fetch / Axios (API calls)**\n- **LocalStorage**\n\n## 🎬 Demo\nCheck out the live dashboard: [Live Demo](https://react-machine-round-project.netlify.app/)\n`,
+  },
+  {
+    name: "Real-Time Multi-User Chat",
+    description:
+      "A sophisticated real-time chat application built with React and WebSockets. Features instant messaging, user presence tracking, community rules, and a clean, modern UI optimized for multi-user interaction.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "websockets", color: "green-text-gradient" },
+      { name: "nodejs", color: "pink-text-gradient" },
+      { name: "express", color: "orange-text-gradient" },
+    ],
+    image: multi_chat,
+    source_code_link: "https://github.com/bala9424/MultiUserChatWEbsite",
+    live_link: "https://chatusain.netlify.app/",
+    details: `\n# Real-Time Multi-User Chat 💬\n\nWelcome to the **Real-Time Multi-User Chat Website**! This project is a modern communication platform that enables users to connect and chat in real-time using **WebSockets**.\n\n## 🚀 Key Features\n- **Real-Time Messaging**: Built with WebSockets for instant communication ⚡\n- **User Discovery**: Find and chat with other online users 👥\n- **Presence Management**: Real-time tracking of online/offline status 🟢\n- **Clean UI**: Modern, dark-themed interface with intuitive navigation 🎨\n- **Community Rules**: Built-in safety and respect guidelines for a positive environment 🛡️\n\n## 🛠️ Technologies Used\n- **Frontend**: React.js, Tailwind CSS\n- **Backend**: Node.js, Express.js\n- **Communication**: WebSockets (Socket.io)\n- **Deployment**: Netlify / Render\n\n## 🎬 Live Demo\nExperience the real-time chat: [Chatusain Live Demo](https://chatusain.netlify.app/)\n\n## 🏗️ Getting Started\n1. Clone the repository:\n   git clone https://github.com/bala9424/MultiUserChatWEbsite.git\n2. Install client dependencies:\n   cd MultiUserChatWEbsite/client && npm install\n3. Install server dependencies:\n   cd ../server && npm install\n4. Start development build.\n`,
+  },
+  {
+    name: "QuantumDash - GSAP Animated Dashboard",
+    description:
+      "A high-performance, visually stunning modern dashboard built with React and GSAP. Features smooth animations, real-time-like data visualizations (Velocity Performance, Core Utilization), dark mode, and a highly responsive, premium UI design.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "gsap", color: "green-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "recharts", color: "orange-text-gradient" },
+    ],
+    image: modern_dashboard,
+    source_code_link: "https://github.com/bala9424/modern-dashboard",
+    live_link: "https://dashboard-gsap.netlify.app/",
+    details: `\n# QuantumDash - GSAP Animated Dashboard 🚀\n\nA cutting-edge dashboard interface that combines advanced animation techniques with professional data organization. Built for performance and aesthetics.\n\n## ✨ Features\n- **Micro-Animations**: Powered by GSAP for a fluid, premium user experience 🪄\n- **Data Visualization**: Interactive charts for Velocity Performance and Core Utilization 📊\n- **Modern UI**: Sleek, professional interface with Quantum-themed branding 🎨\n- **Dark Mode Support**: Seamlessly switch between light and dark themes 🌓\n- **Responsive Design**: Flawless experience across desktops, tablets, and phones 📱\n\n## 🛠️ Technologies Used\n- **React.js**\n- **GSAP** (GreenSock Animation Platform)\n- **Tailwind CSS**\n- **Lucide React** (Icons)\n- **Recharts** (Data Visualization)\n\n## 🎬 Live Demo\nCheck out the live dashboard: [QuantumDash Live Demo](https://dashboard-gsap.netlify.app/)\n\n## 🏗️ Installation & Usage\n1. Clone the repository:\n   git clone https://github.com/bala9424/modern-dashboard.git\n2. Install dependencies:\n   npm install\n3. Start the dev server:\n   npm run dev\n`,
+  },
+  {
+    name: "iPhone 17 Pro - Apple Style Website",
+    description:
+      "A stunning, highly interactive clone of the Apple iPhone 17 Pro landing page. Built with React, GSAP, and Three.js, it features smooth scroll-triggered animations, premium 3D models, and a sleek, modern UI that replicates the authentic Apple experience.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "gsap", color: "green-text-gradient" },
+      { name: "threejs", color: "pink-text-gradient" },
+      { name: "tailwind", color: "orange-text-gradient" },
+    ],
+    image: iphone17,
+    source_code_link: "https://github.com/bala9424/Iphone17",
+    live_link: "https://balu-iphone-17.netlify.app/",
+    details: `\n# iPhone 17 Pro - Apple Style Website 📱✨\n\nWelcome to the **iPhone 17 Pro Landing Page Clone**! This project is a visually stunning, high-performance website that replicates the premium Apple experience through advanced web technologies.\n\n## 🚀 Key Features\n- **GSAP Animations**: Fluid scroll-triggered animations and transitions for an immersive feel 🪄\n- **3D Interactive Models**: Integrated high-quality 3D views of the iPhone (using Three.js) 🎥\n- **Smooth Scrolling**: Lenis smooth scroll for a seamless browsing experience ✨\n- **Apple Aesthetics**: Meticulously crafted UI following Apple's design language 🎨\n- **Fully Responsive**: Optimized for all devices, from mobile to ultra-wide monitors 📱💻\n\n## 🛠️ Technologies Used\n- **React.js**\n- **GSAP** (GreenSock Animation Platform)\n- **Three.js** (3D Rendering)\n- **Tailwind CSS**\n- **Vite** (Build Tool)\n\n## 🎬 Live Demo\nExperience the stunning visuals here: [iPhone 17 Pro Live Demo](https://balu-iphone-17.netlify.app/)\n\n## 🏗️ Installation & Usage\n1. Clone the repository:\n   git clone https://github.com/bala9424/Iphone17.git\n2. Install dependencies:\n   npm install\n3. Run the development server:\n   npm run dev\n`,
   }
 ];
 
