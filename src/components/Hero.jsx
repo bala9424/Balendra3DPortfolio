@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
+import { resume } from "../assets";
 import { ComputersCanvas } from "./canvas";
 import Type from "./type";
 import { Suspense } from "react";
@@ -66,8 +67,8 @@ const Hero = () => {
               Know more
             </a>
             <a 
-              href="/Balendra_Paraste_Resume.pdf" 
-              download="Balendra_Paraste_Resume.pdf"
+              href={resume} 
+              download="BalendraKumarParasteResume.pdf"
               className="py-2 px-6 button-primary text-center text-white rounded-lg inline-flex items-center gap-2"
               style={{ cursor: 'pointer', textDecoration: 'none', zIndex: 999, position: 'relative' }}
             >

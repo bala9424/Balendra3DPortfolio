@@ -44,6 +44,7 @@ import mygif from "./mygif.gif";
 import rocket from "./rocket.gif";
 import lantern from "./lantern.png";
 import astronaut from "./astronaut.gif";
+import resume from "./BalendraKumarParasteResume.pdf.pdf";
 
 export {
   logo,
@@ -82,6 +83,7 @@ export {
   lantern,
   rocket,
   astronaut,
+  resume,
   fanta_card,
   naturalist_card,
   travel_card,
