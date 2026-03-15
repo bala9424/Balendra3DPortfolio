@@ -49,6 +49,7 @@ import mygif from "./mygif.gif";
 import rocket from "./rocket.gif";
 import lantern from "./lantern.png";
 import astronaut from "./astronaut.gif";
+import astronaut_laptop from "./astronaut_laptop.avif";
 import resume from "./BalendraKumarParasteResume.pdf.pdf";
 
 export {
@@ -99,5 +100,6 @@ export {
   client1,
   client2,
   client3,
-  client4
+  client4,
+  astronaut_laptop
 };
