@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { mygif } from "../assets";
+import { astronaut_laptop } from "../assets";
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
 
@@ -70,26 +70,26 @@ const About = () => {
 
         <div className="relative flex justify-center items-center w-full max-w-[260px] sm:max-w-[320px] mx-auto md:mr-10 mt-16 md:mt-4 flex-shrink-0 z-10 pb-10">
           <div className="relative w-full aspect-[4/5] bg-gradient-to-b from-[#e6d9ce] to-[#d6c7b9] rounded-[40px] shadow-2xl">
-             <img src={mygif} className="absolute inset-0 w-full h-full object-cover rounded-[40px] mix-blend-normal z-0" alt="avatar" />
+             <img src={astronaut_laptop} className="absolute inset-0 w-full h-full object-cover rounded-[40px] mix-blend-normal z-0" alt="avatar" />
              
              {/* Floating Pill Top Left */}
              <motion.div 
                animate={{ y: [0, -10, 0] }}
                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-               className="absolute top-10 -left-6 sm:-left-12 bg-[#1f2235]/90 backdrop-blur-md border border-white/10 rounded-2xl p-4 shadow-xl z-20 w-44"
+               className="absolute top-10 -left-8 sm:-left-16 bg-[#1f2235]/90 backdrop-blur-md border border-white/10 rounded-xl p-2 sm:p-3 shadow-xl z-20 w-32 sm:w-36"
              >
-               <h3 className="text-white font-bold text-xl">5 Years</h3>
-               <p className="text-gray-400 text-sm">Experience</p>
+               <h3 className="text-white font-bold text-base sm:text-lg">5+ Years</h3>
+               <p className="text-gray-400 text-xs sm:text-sm">Experience</p>
              </motion.div>
              
              {/* Floating Pill Bottom Right */}
              <motion.div 
                animate={{ y: [0, 8, 0] }}
                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-               className="absolute bottom-16 -right-6 sm:-right-8 bg-[#1f2235]/90 backdrop-blur-md border border-white/10 rounded-2xl p-4 shadow-xl z-20 w-44"
+               className="absolute bottom-16 -right-8 sm:-right-12 bg-[#1f2235]/90 backdrop-blur-md border border-white/10 rounded-xl p-2 sm:p-3 shadow-xl z-20 w-32 sm:w-36"
              >
-               <h3 className="text-white font-bold text-xl">5+ Clients</h3>
-               <p className="text-gray-400 text-sm">Fortune 500</p>
+               <h3 className="text-white font-bold text-base sm:text-lg">5+</h3>
+               <p className="text-gray-400 text-xs sm:text-sm">Clients</p>
              </motion.div>
           </div>
         </div>
