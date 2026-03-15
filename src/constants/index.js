@@ -31,6 +31,9 @@ import {
   multi_chat,
   modern_dashboard,
   iphone17,
+  client2,
+  client3,
+  client4,
 } from "../assets";
  
  import {
@@ -175,7 +178,7 @@ const experiences = [
   {
     title: "Software Engineer",
     company_name: "Divami Design Labs Pvt. Ltd",
-    icon: web,
+    icon: client4,
     iconBg: "#E6DEDD",
     date: "March 2022 - Present",
     skills: ["React", "Angular", "Nest JS", "Next.js", "Node.js", "Material UI", "Tailwind CSS", "Python", "Data Analytics", "Gen AI"],
@@ -191,7 +194,7 @@ const experiences = [
   {
     title: "Senior Software Engineer",
     company_name: "Blue Yonder | Jda(Panasonic)",
-    icon: fullstack,
+    icon: client2,
     iconBg: "#383E56",
     date: "June 2023 - December 2025",
     skills: ["React", "Socket", "PubSub", "Events", "Material UI", "CI/CD", "Git Flow", "RTL", "Jest", "WebdriverIO"],
@@ -206,7 +209,7 @@ const experiences = [
   {
     title: "Software Engineer",
     company_name: "SitaraFoods.com",
-    icon: mobile,
+    icon: client3,
     iconBg: "#383E56",
     date: "July 2021 - February 2022",
     points: [
