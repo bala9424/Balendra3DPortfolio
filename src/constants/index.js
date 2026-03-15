@@ -173,26 +173,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Senior Software Engineer",
-    company_name: "Blue Yonder | Jda(Panasonic)",
-    icon: fullstack,
-    iconBg: "#383E56",
-    date: "June 2023 - Present",
-    skills: ["React", "Socket", "PubSub", "Events", "Material UI", "CI/CD", "Git Flow", "RTL", "Jest", "WebdriverIO"],
-    points: [
-      "Engineered scalable enterprise dashboards using React (TypeScript), Redux, and modern UI libraries, improving vendor management workflows and real-time data visibility for business operations.",
-      "Developed comprehensive End-to-End (E2E) test suites using WebdriverIO, achieving ~90% coverage of critical user flows and reducing regression defects by ~30%.",
-      "Led the migration from MUI v4 to MUI v5, improving component performance and UI consistency by ~25%; refactored and expanded unit tests using Jest and React Testing Library (RTL) to improve coverage, reliability, and maintainability.",
-      "Worked on the frontend/UI of an existing AI agent–driven application using React, enhancing interfaces that integrate intelligent assistants for workflow automation, recommendations, and contextual actions.",
-      "Contributed to an existing micro-frontend–based UI platform, building and enhancing features across multiple independently deployed frontend modules.",
-    ],
-  },
-  {
     title: "Software Engineer",
     company_name: "Divami Design Labs Pvt. Ltd",
     icon: web,
     iconBg: "#E6DEDD",
-    date: "March 2022 - May 2023",
+    date: "March 2022 - Present",
     skills: ["React", "Angular", "Nest JS", "Next.js", "Node.js", "Material UI", "Tailwind CSS", "Python", "Data Analytics", "Gen AI"],
     points: [
       "Built and enhanced responsive, data-driven web interfaces using React, Angular, HTML, CSS, and JavaScript, improving overall user experience and page usability by ~30% across multiple client projects (Yuyiii, imPAC, RightData).",
@@ -201,6 +186,21 @@ const experiences = [
       "Integrated frontend applications with backend APIs (PHP and service APIs), improving data fetch reliability and reducing UI data-related issues by ~20%.",
       "Implemented state management and component-level architecture in React-based applications, reducing unnecessary re-renders and improving UI performance by ~20–25%.",
       "Wrote and maintained unit tests for frontend components, increasing test coverage to ~70–80% and reducing production regressions by ~25%.",
+    ],
+  },
+  {
+    title: "Senior Software Engineer",
+    company_name: "Blue Yonder | Jda(Panasonic)",
+    icon: fullstack,
+    iconBg: "#383E56",
+    date: "June 2023 - December 2025",
+    skills: ["React", "Socket", "PubSub", "Events", "Material UI", "CI/CD", "Git Flow", "RTL", "Jest", "WebdriverIO"],
+    points: [
+      "Engineered scalable enterprise dashboards using React (TypeScript), Redux, and modern UI libraries, improving vendor management workflows and real-time data visibility for business operations.",
+      "Developed comprehensive End-to-End (E2E) test suites using WebdriverIO, achieving ~90% coverage of critical user flows and reducing regression defects by ~30%.",
+      "Led the migration from MUI v4 to MUI v5, improving component performance and UI consistency by ~25%; refactored and expanded unit tests using Jest and React Testing Library (RTL) to improve coverage, reliability, and maintainability.",
+      "Worked on the frontend/UI of an existing AI agent–driven application using React, enhancing interfaces that integrate intelligent assistants for workflow automation, recommendations, and contextual actions.",
+      "Contributed to an existing micro-frontend–based UI platform, building and enhancing features across multiple independently deployed frontend modules.",
     ],
   },
   {

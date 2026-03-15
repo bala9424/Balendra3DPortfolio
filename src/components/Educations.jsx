@@ -12,6 +12,7 @@ import { ImPointRight } from "react-icons/im";
 import { univ_logo } from "../assets";
 import { AnimatePresence } from "framer-motion";
 import nptel from '../assets/nptel.jpg';
+import Clients from "./Clients";
 
 const Slider = ({ services, itemsPerPage = 4 }) => {
   const ref = useRef(null);
@@ -210,6 +211,10 @@ const Educations = () => {
           </div>
         </div>
       </div>
+
+      {/* Clients Section */}
+      <Clients />
+
       <motion.div variants={textVariant()}>
         <h1 className="text-2xl sm:text-3xl md:text-4xl pt-5 pb-2 text-center">
           <strong className="purple">Certificate Received</strong>

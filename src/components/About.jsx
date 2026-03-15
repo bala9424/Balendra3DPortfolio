@@ -58,18 +58,58 @@ const About = () => {
             viewport={{ once: true, amount: 0.25 }}
             className="mt-4 text-gray-300 text-sm sm:text-base leading-[30px]"
           >
-            I'm a skilled software developer with experience in <span className='text-blue-500 font-medium'>TypeScript</span> and <span className='text-yellow-400 font-medium'>JavaScript</span>, specializing in both <span className='text-purple-400 font-semibold'>frontend</span> and <span className='text-cyan-400 font-semibold'>backend</span> development.
+            I am an innovative software engineer with deep expertise in <span className='text-blue-500 font-medium'>TypeScript</span> and <span className='text-yellow-400 font-medium'>JavaScript</span>, specializing in robust <span className='text-purple-400 font-semibold'>frontend</span> and <span className='text-cyan-400 font-semibold'>backend</span> architecture.
             <br /><br />
-            On the frontend, I've worked with <span className='text-red-400 font-medium'>Angular</span>, <span className='text-blue-400 font-medium'>React</span>, <span className='text-indigo-400 font-medium'>Material UI</span>, and <span className='text-pink-400 font-medium'>SCSS</span> to build responsive and engaging user interfaces. On the backend, I have expertise in <span className='text-red-500 font-medium'>NestJS</span>, <span className='text-green-500 font-medium'>Node.js</span>, and <span className='text-gray-400 font-medium'>Express.js</span>, along with strong knowledge of databases, including <span className='text-orange-400 font-medium'>SQL</span>, <span className='text-pink-500 font-medium'>GraphQL</span>, <span className='text-green-400 font-medium'>MongoDB</span>, <span className='text-blue-500 font-medium'>MySQL</span>, and <span className='text-cyan-500 font-medium'>PostgreSQL</span>. 
+            My frontend experience spans <span className='text-red-400 font-medium'>Angular</span>, <span className='text-blue-400 font-medium'>React</span>, <span className='text-indigo-400 font-medium'>Material UI</span>, and <span className='text-pink-400 font-medium'>SCSS</span>, enabling me to architect responsive, high-performance user interfaces. On the backend, I engineer scalable microservices and APIs using <span className='text-red-500 font-medium'>NestJS</span>, <span className='text-green-500 font-medium'>Node.js</span>, and <span className='text-gray-400 font-medium'>Express.js</span>. I am highly proficient in database design across relational and NoSQL paradigms, including <span className='text-orange-400 font-medium'>SQL</span>, <span className='text-pink-500 font-medium'>GraphQL</span>, <span className='text-green-400 font-medium'>MongoDB</span>, <span className='text-blue-500 font-medium'>MySQL</span>, and <span className='text-cyan-500 font-medium'>PostgreSQL</span>. 
             <br /><br />
-            Specialized in <span className='text-green-400 font-semibold'>unit testing with Jest</span> and <span className='text-green-500 font-semibold'>E2E automation using WebdriverIO</span>, ensuring code quality and reliability.
+            Dedicated to engineering excellence, I emphasize rigorous <span className='text-green-400 font-semibold'>unit testing with Jest</span> and <span className='text-green-500 font-semibold'>E2E automation via WebdriverIO</span> to ensure unwavering code quality and deployment reliability.
             <br /><br />
-            I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
+            As an agile problem-solver, I collaborate seamlessly with cross-functional teams and clients to deliver scalable, user-centric software solutions that drive tangible business value. Let's build something exceptional together!
           </motion.p>
         </div>
 
-        <div className="flex justify-center md:justify-end items-center flex-shrink-0">
-          <img src={mygif} className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] h-auto object-contain" alt="avatar" />
+        <div className="relative flex justify-center items-center w-full max-w-[260px] sm:max-w-[320px] mx-auto md:mr-10 mt-16 md:mt-4 flex-shrink-0 z-10 pb-10">
+          <div className="relative w-full aspect-[4/5] bg-gradient-to-b from-[#e6d9ce] to-[#d6c7b9] rounded-[40px] shadow-2xl">
+             <img src={mygif} className="absolute inset-0 w-full h-full object-cover rounded-[40px] mix-blend-normal z-0" alt="avatar" />
+             
+             {/* Floating Pill Top Left */}
+             <motion.div 
+               animate={{ y: [0, -10, 0] }}
+               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+               className="absolute top-10 -left-6 sm:-left-12 bg-[#1f2235]/90 backdrop-blur-md border border-white/10 rounded-2xl p-4 shadow-xl z-20 w-44"
+             >
+               <h3 className="text-white font-bold text-xl">5 Years</h3>
+               <p className="text-gray-400 text-sm">Experience</p>
+             </motion.div>
+             
+             {/* Floating Pill Bottom Right */}
+             <motion.div 
+               animate={{ y: [0, 8, 0] }}
+               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+               className="absolute bottom-16 -right-6 sm:-right-8 bg-[#1f2235]/90 backdrop-blur-md border border-white/10 rounded-2xl p-4 shadow-xl z-20 w-44"
+             >
+               <h3 className="text-white font-bold text-xl">5+ Clients</h3>
+               <p className="text-gray-400 text-sm">Fortune 500</p>
+             </motion.div>
+          </div>
+        </div>
+      </div>
+
+      {/* Stats Below Intro */}
+      <div className="w-full mt-24 mb-10 pb-8 border-b border-purple-500/20">
+        <div className="flex flex-wrap justify-between items-center gap-6 max-w-4xl mx-auto px-4">
+          <div className="flex flex-col items-center">
+             <h3 className="text-white font-bold text-4xl sm:text-5xl">5</h3>
+             <p className="text-gray-400 text-sm sm:text-base mt-2">Years Experience</p>
+          </div>
+          <div className="flex flex-col items-center">
+             <h3 className="text-white font-bold text-4xl sm:text-5xl">90%</h3>
+             <p className="text-gray-400 text-sm sm:text-base mt-2">Test Coverage</p>
+          </div>
+          <div className="flex flex-col items-center">
+             <h3 className="text-white font-bold text-4xl sm:text-5xl">5+</h3>
+             <p className="text-gray-400 text-sm sm:text-base mt-2">Global Clients</p>
+          </div>
         </div>
       </div>
       <div className="mt-6">
@@ -80,9 +120,9 @@ const About = () => {
           viewport={{ once: true, amount: 0.25 }}
           className="mt-4 text-gray-300 text-sm sm:text-base leading-[30px]"
         >
-          In addition to development, I have a strong understanding of <span className='text-orange-400 font-medium'>Agile methodologies</span>, ensuring efficient and iterative project management. I'm also familiar with <span className='text-sky-400 font-medium'>cloud servers</span>, <span className='text-purple-400 font-medium'>CI/CD pipelines</span>, and <span className='text-cyan-400 font-medium'>DevOps tools</span>, including <span className='text-red-400 font-medium'>Jenkins</span>, <span className='text-blue-400 font-medium'>Docker</span>, and cloud platforms, enabling seamless deployment and scalability of applications. 
+          Beyond core development, I am well-versed in <span className='text-orange-400 font-medium'>Agile methodologies</span>, driving iterative delivery and streamlined project lifecycles. I possess hands-on experience with <span className='text-sky-400 font-medium'>cloud infrastructure</span>, <span className='text-purple-400 font-medium'>CI/CD pipelines</span>, and modern <span className='text-cyan-400 font-medium'>DevOps practices</span> involving <span className='text-red-400 font-medium'>Jenkins</span> and <span className='text-blue-400 font-medium'>Docker</span> to ensure seamless, automated deployments. 
           <br /><br />
-          My fields of interest include building new <span className='text-purple-400 font-semibold'>web technologies and products</span>, as well as exploring areas related to <span className='text-yellow-400 font-semibold'>data science</span>, <span className='text-green-400 font-semibold'>machine learning</span>, and <span className='text-pink-400 font-semibold'>data structures & algorithms</span>. While I have a basic understanding of these domains, I am continuously learning and expanding my expertise.
+          I am deeply passionate about architecting innovative <span className='text-purple-400 font-semibold'>digital products</span> and actively exploring emerging technologies. I am continuously expanding my knowledge in <span className='text-yellow-400 font-semibold'>Data Science</span>, <span className='text-green-400 font-semibold'>Machine Learning</span>, and advanced <span className='text-pink-400 font-semibold'>Algorithms</span> to stay at the forefront of the tech industry.
         </motion.p>
       </div>
     </div>

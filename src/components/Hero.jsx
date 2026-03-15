@@ -36,7 +36,7 @@ const Hero = () => {
           {/* Portfolio Label Badge */}
           <div className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-90 w-max">
             <span className="Welcome-text text-[13px]">
-              ✨ Fullstack Developer Portfolio
+              ✨ Actively Open for new Opportunities
             </span>
           </div>
 
@@ -47,11 +47,11 @@ const Hero = () => {
           <Type />
           
           <p className='text-sm sm:text-base md:text-lg text-gray-300 max-w-[600px] my-3 sm:my-5 leading-relaxed'>
-            I'm a <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold'>Full Stack Software Engineer</span> with <span className='text-cyan-400 font-semibold'>4+ years</span> of experience in <span className='text-purple-400'>Website</span>, <span className='text-pink-400'>Mobile</span>, and <span className='text-cyan-400'>Software development</span>. 
+            I am a results-driven <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold'>Full Stack Software Engineer</span> with over <span className='text-cyan-400 font-semibold'>5 years</span> of expertise in building scalable <span className='text-purple-400'>Web</span>, <span className='text-pink-400'>Mobile</span>, and <span className='text-cyan-400'>Enterprise applications</span>. 
             <br /><br />
-            Currently expanding expertise in <span className='text-yellow-400 font-semibold'>AI</span>, <span className='text-orange-400 font-semibold'>Data Science</span>, and <span className='text-purple-500 font-semibold'>Three.js 3D UI</span> development. 
+            Currently expanding my technical horizons in <span className='text-yellow-400 font-semibold'>AI</span>, <span className='text-orange-400 font-semibold'>Data Science</span>, and immersive <span className='text-purple-500 font-semibold'>Three.js 3D interfaces</span>. 
             <br /><br />
-            <span className='text-purple-300'>Check out my projects and skills</span> 👇
+            <span className='text-purple-300'>Explore my projects and capabilities</span> 👇
           </p>
 
           <div className='flex flex-row gap-4 mt-5'>
